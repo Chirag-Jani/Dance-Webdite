@@ -1,0 +1,56 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style
+    style 
+        include ../static/style.css 
+
+block content
+
+    section#introSection
+
+      div.large
+        | Chirag Dance Academy
+      div.small
+        | Eat Sleep Dance Repeat
+
+    section#missionSection
+
+      h2 Our Mission
+
+      div.card.one 
+        h3 Expert Teaching
+        div.card-box  
+          div.card-img 
+            img(src="../static/img/2.png", alt="")
+          div.card-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tempore?
+
+      div.card.two 
+        h3 World Competitions
+        div.card-box  
+          div.card-img 
+            img(src="../static/img/3.png", alt="")
+          div.card-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tempore?
+
+      div.card.three
+        h3 Dance Perfection
+        div.card-box  
+          div.card-img 
+            img(src="../static/img/4.png", alt="")
+          div.card-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tempore?
+
+
+
+    section#sponcerSection
+      h2 Our Sponcers
+
+      div#sponcors  
+        img(src="../static/img/apple.png", alt="Sponcor Image" class = 'spImage apple')
+        img(src="../static/img/skype.png", alt="Sponcor Image" class = 'spImage skype')
+        img(src="../static/img/mictosoft.png", alt="Sponcor Image" class = 'spImage mictosoft')
+        img(src="../static/img/instagram.png", alt="Sponcor Image" class = 'spImage instagram')
